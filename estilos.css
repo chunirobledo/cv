@@ -31,86 +31,150 @@
 /* aplicaciones*/
 
 body {
-    background-color: #fdfdff;
+    background-color:#defaff;
+    margin: 0px;
 }
 
 nav {
     font-family: 'Fira sans regular', sans-serif;
-    color: rgb(165, 0, 0);
     font-size: 1rem;
     margin-left: 215px;
     padding-top: 70px;
     display: flex;
-    gap: 150px;
+    gap: 200px;
 }
 
 h1 {
    font-family:'fira sans bold', sans-serif;
-    color: rgb(0, 0, 150);
-    font-size: 3.5rem;
-    line-height: 1rem;
-    margin-bottom: 1px;
-    margin-left: 185px;
-    padding: 30px;
+    color: #8a1f42;
+    font-size: 5rem;
+    white-space: nowrap;
+    margin-top: 10px;
+    margin-bottom: 0px;
 }
 
 h2 {
     font-family:'fira sans medium', sans-serif;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
-    line-height: 1rem;
-    margin-left: 215px;
+    line-height: 1.5rem;
     margin-top: 20px;
 }
 
 h3 {
     font-family:'fira sans medium', sans-serif;
-    color: rgb(0, 0, 150);
+    color: #8a1f42;
     font-size: 1.8rem;
     line-height: 1rem;
     margin-bottom: 1px;
     margin-top: 50px;
-    margin-left: 200px;
-    padding: 15px;
 }
 
 h4 {
     font-family:'fira sans italic', sans-serif;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 1.2rem;
     line-height: 0.8;
-    margin-left: 250px;
-    margin-top: 1px;
+    margin-top: 30px;
+    margin-left: 20px;
     margin-bottom: 5px;
-    padding-top: 10px;
 }
 
 p {
     font-family:'Fira sans regular', sans-serif;
-    color: black;
+    color: rgb(0, 0, 0);
     font-size: 1rem;
     text-wrap: balance;
     line-height: 1.8rem;
-    margin-left: 280px;
-    margin-top: 1px;
+    margin-left: 40px;
     max-width: 950px;
-    padding-top: 10px;
 }
 
 img {
     margin-left: 215px;
     margin-top: 45px;
-    border: solid;
 }
 
 footer img {
-  margin-left: 175px;
-  margin-top: 10px;
+  margin-top: 30px;
   border: transparent; 
+  margin-bottom: 50px;
 }
 
 #pp h1 {
-    border-bottom: 2px solid rgb(0, 0, 150);
     padding-bottom: 20px;
     padding-top: 20px;
+}
+
+article {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.una-columna {
+    display: block;
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+.dos-columnas {
+    display: flex;
+    margin-left: 200px;
+    margin-right: 200px;
+    gap: 300px;
+}
+
+.header-presentacion {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+}
+
+.redes h3 {
+    margin-left: 200px;
+    margin-top: 50px;
+}
+
+.redes a {
+    color: #8a1f42;
+    text-decoration: none;
+}
+
+.header-bar {
+  background-color: #8a1f42;
+  padding: 30px 0;            
+  width: 100%;                
+}
+
+.contenedor-texto {
+  max-width: 900px;         
+  margin: 0 auto;
+  padding: 0 20px;   
+}
+
+ nav a {
+    color: #defaff;       
+    text-decoration: none;
+}
+
+.puesto{
+    font-weight: sans-serif;
+    font-size: 1.4rem;
+    margin-bottom: 10px;
+    margin-top: 30px;
+}
+
+.empresa {
+    font-style: italic;
+    font-size: 1rem;
+    margin-top: 15px;
+    margin-bottom: 5px;
+}
+
+.separador {
+    border: none;             
+    height: 2px;              
+    background-color: #8a1f42; 
+    margin: 10px 0 20px 0;    
+    width: 100%;      
 }
