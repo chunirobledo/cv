@@ -38,10 +38,15 @@ body {
 nav {
     font-family: 'Fira sans regular', sans-serif;
     font-size: 1rem;
-    margin-left: 215px;
-    padding-top: 70px;
+    margin: 0;
+    padding-top: 30px;
     display: flex;
-    gap: 200px;
+    gap: 100px;
+}
+
+ nav a {
+    color: #defaff;       
+    text-decoration: none;
 }
 
 h1 {
@@ -90,7 +95,7 @@ p {
     max-width: 950px;
 }
 
-img {
+.header-presentacion img {
     margin-left: 215px;
     margin-top: 45px;
 }
@@ -121,6 +126,7 @@ article {
     display: flex;
     margin-left: 200px;
     margin-right: 200px;
+    margin-bottom: 70px;
     gap: 300px;
 }
 
@@ -130,9 +136,20 @@ article {
     max-width: 1000px;
 }
 
+.redes {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
 .redes h3 {
-    margin-left: 200px;
-    margin-top: 50px;
+    color: #defaff;
+    font-size: 1rem;
+    font-family: 'Fira sans medium', sans-serif;
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-bottom: 15px;
 }
 
 .redes a {
@@ -142,6 +159,14 @@ article {
 
 .header-bar {
   background-color: #8a1f42;
+  padding: 30px 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;    
+}
+
+.footer-bar {
+  background-color: #8a1f42;
   padding: 30px 0;            
   width: 100%;                
 }
@@ -150,11 +175,6 @@ article {
   max-width: 900px;         
   margin: 0 auto;
   padding: 0 20px;   
-}
-
- nav a {
-    color: #defaff;       
-    text-decoration: none;
 }
 
 .puesto{
@@ -177,4 +197,16 @@ article {
     background-color: #8a1f42; 
     margin: 10px 0 20px 0;    
     width: 100%;      
+}
+
+#idiomas img {
+    margin-left: 40px;
+}
+
+#software img {
+    margin-left: 40px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
