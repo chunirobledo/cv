@@ -1,5 +1,6 @@
 @charset "utf-8";
 
+/* fuentes */
 @font-face {
     font-family: "fira sans regular";
     src: url(fonts/FiraSans-Regular.ttf) format(truetype);
@@ -24,21 +25,63 @@
 @font-face {
     font-family: "fira sans medium";
     src: url(fonts/FiraSans-Medium.ttf) format(truetype);
-    font-weight: 50;
+    font-weight: 500;
     font-style: normal;
 }
 
-/* aplicaciones*/
+/* configuraciones de fuentes */
+
+h1 {
+   font-family:'fira sans bold', sans-serif;
+    color: #8a1f42;
+    font-size: 6rem;
+    white-space: nowrap;
+}
+
+h2 {
+    font-family:'fira sans medium', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+h3 {
+    font-family:'fira sans medium', sans-serif;
+    color: #8a1f42;
+    font-size: 1.8rem;
+    line-height: 1rem;
+}
+
+h4 {
+    font-family:'fira sans italic', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1.2rem;
+    line-height: 20px;
+}
+
+p {
+    font-family:'Fira sans regular', sans-serif;
+    color: rgb(0, 0, 0);
+    font-size: 1rem;
+    text-wrap: balance;
+    line-height: 1.8rem;
+    max-width: 950px;
+    margin:0px 0px 0px 40px;
+}
+
+/* aplicaciones */
 
 body {
     background-color:#defaff;
     margin: 0px;
 }
 
+/* header */
+
 nav {
     font-family: 'Fira sans regular', sans-serif;
     font-size: 1rem;
-    margin: 0;
+    margin: 0px;
     padding-top: 30px;
     display: flex;
     gap: 100px;
@@ -49,112 +92,9 @@ nav {
     text-decoration: none;
 }
 
-h1 {
-   font-family:'fira sans bold', sans-serif;
-    color: #8a1f42;
-    font-size: 5rem;
-    white-space: nowrap;
-    margin-top: 10px;
-    margin-bottom: 0px;
-}
-
-h2 {
-    font-family:'fira sans medium', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-    line-height: 1.5rem;
-    margin-top: 20px;
-}
-
-h3 {
-    font-family:'fira sans medium', sans-serif;
-    color: #8a1f42;
-    font-size: 1.8rem;
-    line-height: 1rem;
-    margin-bottom: 1px;
-    margin-top: 50px;
-}
-
-h4 {
-    font-family:'fira sans italic', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1.2rem;
-    line-height: 0.8;
-    margin-top: 30px;
-    margin-left: 20px;
-    margin-bottom: 5px;
-}
-
-p {
-    font-family:'Fira sans regular', sans-serif;
-    color: rgb(0, 0, 0);
-    font-size: 1rem;
-    text-wrap: balance;
-    line-height: 1.8rem;
-    margin-left: 40px;
-    max-width: 950px;
-}
-
-.header-presentacion img {
-    margin-left: 215px;
-    margin-top: 45px;
-}
-
-footer img {
-  margin-top: 30px;
-  border: transparent; 
-  margin-bottom: 50px;
-}
-
-#pp h1 {
-    padding-bottom: 20px;
-    padding-top: 20px;
-}
-
-article {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.una-columna {
-    display: block;
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
-.dos-columnas {
-    display: flex;
-    margin-left: 200px;
-    margin-right: 200px;
-    margin-bottom: 70px;
-    gap: 300px;
-}
-
-.header-presentacion {
-    display: flex;
-    gap: 50px;
-    max-width: 1000px;
-}
-
-.redes {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 20px;
-}
-
-.redes h3 {
-    color: #defaff;
-    font-size: 1rem;
-    font-family: 'Fira sans medium', sans-serif;
-    margin-left: 0px;
-    margin-top: 0px;
-    margin-bottom: 15px;
-}
-
-.redes a {
-    color: #8a1f42;
-    text-decoration: none;
+nav a:hover {
+    text-decoration: underline;
+    text-decoration-style: dotted;
 }
 
 .header-bar {
@@ -165,47 +105,116 @@ article {
   justify-content: center;    
 }
 
-.footer-bar {
-  background-color: #8a1f42;
-  padding: 30px 0;            
-  width: 100%;                
+/* main */
+
+/* presentación */
+
+.presentacion {
+    display: flex;
+    gap: 50px;
+    max-width: 1000px;
+    margin: 0 auto;
+    justify-content: center;
+    padding: 80px 0px 0px 0px;
 }
 
-.contenedor-texto {
-  max-width: 900px;         
-  margin: 0 auto;
-  padding: 0 20px;   
+.texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
 }
 
-.puesto{
-    font-weight: sans-serif;
-    font-size: 1.4rem;
-    margin-bottom: 10px;
-    margin-top: 30px;
+.texto h1 {
+    margin: 0px 0px 30px 0px;
 }
+
+.texto h2 {
+    margin: 0px 0px 10px 0px;
+}
+
+/* informacion */
+
+.contenido {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 80px 0px 80px 0px;
+}
+
+.contenido article {
+    display: flex;
+    flex-direction: column;
+}
+
+.contenido h3 {
+    margin: 0px 0px 10px 0px;
+}
+
+.una-columna article h4 {
+    margin: 5px 0px 5px 0px;
+    line-height: 20px;
+}
+
+.contenido p {
+    margin: 0 0 15px 0;
+}
+
+.dos-columnas {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+/* experiencia y educacion */
 
 .empresa {
     font-style: italic;
     font-size: 1rem;
-    margin-top: 15px;
-    margin-bottom: 5px;
+    margin: 15px 0px 5px 0px;
 }
 
-.separador {
-    border: none;             
-    height: 2px;              
-    background-color: #8a1f42; 
-    margin: 10px 0 20px 0;    
-    width: 100%;      
+.titulo {
+    margin: 30px 0px 10px 0px;
+}
+
+/* software e idiomas */
+
+#software img {
+    margin: 0px 0px 40px 0px;
 }
 
 #idiomas img {
-    margin-left: 40px;
+    margin: 0px 0px 40px 0px;
 }
 
-#software img {
-    margin-left: 40px;
+.dos-columnas h4 {
+    margin: 5px 0px 5px 0px;
+    line-height: 20px;
 }
+
+/* footer */
+
+.footer-bar {
+  background-color: #8a1f42;
+  padding: 50px 0px 0px 0px;            
+  width: 100%;               
+  text-align: center; 
+}
+
+footer img {
+  border: transparent; 
+  margin: 30px 0px 50px 0px;
+}
+
+.footer-bar h4 {
+  color: #defaff; /* para que combine con el fondo */
+  font-family: 'fira sans italic', sans-serif;
+  margin: 0 auto;
+}
+
+/* comportamiento */
 
 html {
   scroll-behavior: smooth;
