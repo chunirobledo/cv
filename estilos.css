@@ -105,6 +105,13 @@ nav a img {
 
 /* main */
 
+.galeria {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
 /* presentación */
 
 .hero {
@@ -188,26 +195,6 @@ nav a img {
 .dos-columnas h4 {
     margin: 5px 0px 5px 0px;
     line-height: 20px;
-}
-
-/* footer */
-
-.footer-bar {
-  background-color: #171050;
-  padding: 50px 0px 0px 0px;            
-  width: 100%;               
-  text-align: center; 
-}
-
-footer img {
-  border: transparent; 
-  margin: 30px 0px 50px 0px;
-}
-
-.footer-bar h4 {
-  color: #F0CFA1; /* para que combine con el fondo */
-  font-family: 'fira sans italic', sans-serif;
-  margin: 0 auto;
 }
 
 /* comportamiento */
