@@ -8,7 +8,7 @@
 </head>
 <body>
 
-  <header>
+  <header class="header-bar">
     <nav>
       <a href="index.html">home</a>
       <a href="aboutme.html">about me</a>
@@ -26,37 +26,33 @@
   </header>
 
   <main>
-    <section class="hero" id="hero">
-      <h1>create is my second nature</h1>
-      <h2>get to know me</h2>
-    </section>
+    <section id="formulario">
+      <h1>let’s talk</h1>
 
-    <section id="estructura-index">
-      <h2>some works</h2>
-      <div class="galeria">
-        <a href="rana-2.html">
-          <img src="img/rana2.png" alt="obra 1" height="440" width="720">
-        </a>
-        <a href="osito-1.html">
-          <img src="img/osito1.png" alt="obra 2" height="440" width="720">
-        </a>
-        <a href="hada-1.html">
-          <img src="img/hada1.png" alt="obra 3" height="440" width="720">
-        </a>
-        <a href="vino-1.html">
-          <img src="img/vino1.png" alt="obra 4" height="440" width="720">
-        </a>
-        <a href="araña-2.html">
-          <img src="img/araña2.png" alt="obra 5" height="440" width="720">
-        </a>
-        <a href="bodoni-1.html">
-          <img src="img/bodoni1.png" alt="obra 6" height="440" width="720">
-        </a>
-      </div>
+      <form method="post" action="mailto:agus.robledo13@gmail.com?subject=i have a project" target="_blank" enctype="text/plain">
+        <label for="name">name</label>
+        <input type="text" id="name" name="name" maxlength="30" placeholder="e.g. elsa capunta" required>
+
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" placeholder="aitor_menta98@gmail.com" required>
+
+        <label for="message">message</label>
+        <textarea id="message" name="message" maxlength="600" placeholder="tell me about your project"></textarea>
+
+        <div class="botones-form">
+          <input type="reset" value="reset" class="button-form">
+          <input type="submit" value="send" class="button-form">
+        </div>
+
+        <aside>
+          <h2>stay in touch</h2>
+          <p>I’m always open to new ideas, collaborations, or creative projects. Let’s make something great together!</p>
+        </aside>
+      </form>
     </section>
   </main>
 
-  <footer>
+  <footer class="header-bar">
     <nav id="navegador">
       <a href="index.html">home</a>
       <a href="aboutme.html">about me</a>
